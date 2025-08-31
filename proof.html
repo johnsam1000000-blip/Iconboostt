@@ -1,39 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IconBoost | Proof</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; }
-    header { background:#111; color:#fff; padding:20px; text-align:center; }
-    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
-    nav a:hover { color:#f39c12; }
-    section { padding:40px; text-align:center; }
-    footer { background:#111; color:#fff; padding:20px; text-align:center; }
-    img { width:80%; max-width:500px; margin:20px auto; display:block; border:3px solid #333; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Our Proof of Success</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="proof.html">Proof</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<!-- Proof Section -->
+<section class="proof">
+  <h3>✅ Our Proof of Work</h3>
+  <p class="tagline">Real results from real clients — because we let our work speak for itself.</p>
 
-  <section>
-    <h2>See Results from Our Work</h2>
-    <p>We don’t just talk, we show results!</p>
-    <img src="proof.png" alt="Proof of work">
-  </section>
+  <div class="proof-gallery">
+    <!-- Proof 1 -->
+    <div class="proof-card">
+      <img src="proof1.png" alt="Monetization Proof">
+      <p>Channel Monetized in <b>3 Weeks</b></p>
+    </div>
 
-  <footer>
-    <p>© 2025 IconBoost | Contact: <a href="mailto:iconboostt@gmail.com">iconboostt@gmail.com</a></p>
-  </footer>
-</body>
-</html>
+    <!-- Proof 2 -->
+    <div class="proof-card">
+      <img src="proof2.png" alt="Growth Proof">
+      <p>+5,000 Subscribers in <b>1 Month</b></p>
+    </div>
+
+    <!-- Proof 3 -->
+    <div class="proof-card">
+      <img src="proof3.png" alt="Engagement Proof">
+      <p>Increased Watch Time by <b>200%</b></p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .proof {
+    background: #fafafa;
+    padding: 70px 20px;
+    text-align: center;
+  }
+  .proof h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #111;
+  }
+  .proof .tagline {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  .proof-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .proof-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+  }
+  .proof-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+  .proof-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.4s;
+  }
+  .proof-card img:hover {
+    transform: scale(1.05);
+  }
+  .proof-card p {
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    background: #f9f9f9;
+  }
+</style>
