@@ -1,42 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IconBoost | Contact</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; }
-    header { background:#111; color:#fff; padding:20px; text-align:center; }
-    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
-    nav a:hover { color:#f39c12; }
-    section { padding:40px; text-align:center; }
-    footer { background:#111; color:#fff; padding:20px; text-align:center; }
-    a.button { display:inline-block; margin:10px; padding:10px 20px; background:#f39c12; color:#fff; text-decoration:none; border-radius:5px; }
-    a.button:hover { background:#d35400; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Contact Us</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="proof.html">Proof</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<!-- Contact Section -->
+<section class="contact">
+  <h3>📩 Get In Touch</h3>
+  <p class="tagline">Let’s discuss how IconBoost can help you grow your channel. We’re just one message away.</p>
 
-  <section>
-    <h2>Get in Touch</h2>
-    <p>Email: <a href="mailto:iconboostt@gmail.com">iconboostt@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/iconboostt" target="_blank">@iconboostt</a></p>
-    <a href="mailto:iconboostt@gmail.com" class="button">Email Us</a>
-    <a href="https://instagram.com/iconboostt" class="button" target="_blank">Message on IG</a>
-  </section>
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h4>📞 Quick Contact</h4>
+      <p><b>Email:</b> <a href="mailto:iconboostt@gmail.com">iconboostt@gmail.com</a></p>
+      <p><b>Instagram:</b> <a href="https://instagram.com/iconboostt" target="_blank">@iconboostt</a></p>
+      <p><b>Agency:</b> Partnered with <b>TJ Digital Agency</b></p>
+    </div>
 
-  <footer>
-    <p>© 2025 IconBoost</p>
-  </footer>
-</body>
-</html>
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h4>📬 Send Us a Message</h4>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    padding: 70px 20px;
+    color: #fff;
+    text-align: center;
+  }
+  .contact h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .contact .tagline {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #fbeee0;
+  }
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .contact-info, .contact-form {
+    background: #fff;
+    color: #333;
+    border-radius: 15px;
+    padding: 30px;
+    flex: 1 1 400px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+  .contact-info h4, .contact-form h4 {
+    margin-bottom: 15px;
+    color: #e67e22;
+  }
+  .contact-info p {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+  .contact-info a {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .contact-form input, 
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  .contact-form button {
+    background: #e67e22;
+    border: none;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .contact-form button:hover {
+    background: #d35400;
+  }
+</style>
