@@ -6,55 +6,126 @@
   <title>IconBoost - Home</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
       background: #f9f9f9;
       color: #333;
     }
+    /* Header */
     header {
       background: #111;
       color: white;
-      padding: 15px;
+      padding: 15px 30px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header img {
       height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      object-fit: cover;
     }
     header h1 {
       display: inline;
       margin-left: 10px;
-      font-size: 24px;
+      font-size: 26px;
+      letter-spacing: 1px;
     }
     nav a {
       color: white;
-      margin: 0 10px;
+      margin: 0 12px;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
     nav a:hover {
       color: #f39c12;
     }
-    main {
-      padding: 30px;
+
+    /* Hero Section */
+    .hero {
+      height: 80vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      color: white;
+      padding: 20px;
     }
-    main h2 {
-      font-size: 28px;
+    .hero h2 {
+      font-size: 42px;
       margin-bottom: 15px;
     }
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin-bottom: 25px;
+    }
+    .btn {
+      padding: 12px 25px;
+      background: #f39c12;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #d35400;
+    }
+
+    /* Services preview */
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card h4 {
+      margin-bottom: 10px;
+      color: #f39c12;
+    }
+
+    /* Footer */
     footer {
       background: #111;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 20px;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header>
     <div style="display: flex; align-items: center;">
       <img src="logo.png" alt="IconBoost Logo">
@@ -69,12 +140,34 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Welcome to IconBoost 🚀</h2>
-    <p>Your trusted partner for YouTube promotion, monetization, and growth.</p>
-    <p>We help creators like you boost their visibility and unlock monetization quickly.</p>
-  </main>
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Boost Your YouTube Growth 🚀</h2>
+    <p>At IconBoost, we specialize in YouTube promotion, monetization, and channel growth. 
+       Take your content to the next level and unlock your earning potential.</p>
+    <a href="services.html" class="btn">Explore Services</a>
+  </section>
 
+  <!-- Services Preview -->
+  <section class="section">
+    <h3>What We Offer</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Channel Promotion</h4>
+        <p>Grow your audience fast with proven promotion strategies that bring real engagement.</p>
+      </div>
+      <div class="card">
+        <h4>Monetization</h4>
+        <p>Get your channel monetized quickly with our expert guidance and support.</p>
+      </div>
+      <div class="card">
+        <h4>Analytics & Growth</h4>
+        <p>We analyze your channel and provide insights to boost your views and subscribers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>© 2025 IconBoost. All Rights Reserved.</p>
     <p>📧 iconboostt@gmail.com | 📱 IG: @iconboostt</p>
