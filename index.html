@@ -3,121 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IconBoost - Home</title>
+  <title>IconBoost - YouTube Growth & Monetization</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
       color: #333;
     }
-    /* Header */
-    header {
-      background: #111;
-      color: white;
-      padding: 15px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+
+    /* ===== NAVIGATION ===== */
+    .navbar {
+      background: #e67e22;
+      padding: 15px;
+      text-align: center;
       position: sticky;
       top: 0;
       z-index: 1000;
     }
-    header img {
-      height: 60px;
-      width: 60px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    header h1 {
-      display: inline;
-      margin-left: 10px;
-      font-size: 26px;
-      letter-spacing: 1px;
-    }
-    nav a {
-      color: white;
-      margin: 0 12px;
-      text-decoration: none;
+    .navbar a {
+      color: #fff;
+      margin: 0 15px;
       font-weight: bold;
-      transition: 0.3s;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
     }
-    nav a:hover {
-      color: #f39c12;
+    .navbar a:hover {
+      color: #ffd700;
+      text-decoration: underline;
     }
 
-    /* Hero Section */
-    .hero {
-      height: 80vh;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                  url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    /* ===== HERO ===== */
+    header {
+      background: url('hero-bg.jpg') no-repeat center center/cover;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
       color: white;
-      padding: 20px;
+      background-color: #222; /* fallback */
     }
-    .hero h2 {
-      font-size: 42px;
-      margin-bottom: 15px;
+    header h1 {
+      font-size: 50px;
+      margin: 0;
+      color: #ffd700;
     }
-    .hero p {
-      font-size: 18px;
-      max-width: 600px;
-      margin-bottom: 25px;
+    header p {
+      font-size: 22px;
+      margin: 20px 0;
     }
-    .btn {
-      padding: 12px 25px;
-      background: #f39c12;
-      color: white;
-      font-size: 16px;
-      border: none;
-      border-radius: 30px;
+    header .btn {
+      background: #e67e22;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
       text-decoration: none;
-      transition: 0.3s;
+      font-weight: bold;
+      transition: background 0.3s;
     }
-    .btn:hover {
+    header .btn:hover {
       background: #d35400;
     }
 
-    /* Services preview */
-    .section {
-      padding: 50px 20px;
+    /* ===== SERVICES ===== */
+    .services {
+      background: #f9f9f9;
+      padding: 70px 20px;
       text-align: center;
     }
-    .section h3 {
-      font-size: 28px;
-      margin-bottom: 20px;
+    .services h3 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #111;
     }
-    .cards {
+    .service-items {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
+      justify-content: center;
+      gap: 30px;
     }
-    .card {
-      background: white;
-      padding: 20px;
+    .service {
+      background: #fff;
+      padding: 30px;
       border-radius: 12px;
-      width: 280px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      width: 300px;
       transition: transform 0.3s;
     }
-    .card:hover {
-      transform: translateY(-8px);
+    .service:hover {
+      transform: translateY(-10px);
     }
-    .card h4 {
-      margin-bottom: 10px;
-      color: #f39c12;
+    .service h4 {
+      color: #e67e22;
+      margin-bottom: 15px;
     }
 
-    /* Footer */
+    /* ===== PROOF ===== */
+    .proof {
+      background: #fff;
+      padding: 70px 20px;
+      text-align: center;
+    }
+    .proof h3 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    .proof-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .proof-gallery img {
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    /* ===== ABOUT ===== */
+    .about {
+      background: #f9f9f9;
+      padding: 70px 20px;
+      text-align: center;
+    }
+    .about h3 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #111;
+    }
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .about-text {
+      flex: 1 1 500px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+    .about-text b {
+      color: #e67e22;
+    }
+    .about-image img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      background: #fff;
+      padding: 70px 20px;
+      text-align: center;
+    }
+    .contact h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .contact p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .contact a {
+      color: #e67e22;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== FOOTER ===== */
     footer {
       background: #111;
-      color: white;
+      color: #fff;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
@@ -125,52 +194,91 @@
   </style>
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html">🏠 Home</a>
+    <a href="services.html">💼 Services</a>
+    <a href="proof.html">✅ Proof</a>
+    <a href="about.html">ℹ️ About</a>
+    <a href="contact.html">📩 Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
   <header>
-    <div style="display: flex; align-items: center;">
-      <img src="logo.png" alt="IconBoost Logo">
-      <h1>IconBoost</h1>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="proof.html">Proof</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <h1>Welcome to IconBoost 🚀</h1>
+    <p>Your trusted partner for YouTube growth & monetization</p>
+    <a href="services.html" class="btn">Explore Our Services</a>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h2>Boost Your YouTube Growth 🚀</h2>
-    <p>At IconBoost, we specialize in YouTube promotion, monetization, and channel growth. 
-       Take your content to the next level and unlock your earning potential.</p>
-    <a href="services.html" class="btn">Explore Services</a>
-  </section>
-
-  <!-- Services Preview -->
-  <section class="section">
-    <h3>What We Offer</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>Channel Promotion</h4>
-        <p>Grow your audience fast with proven promotion strategies that bring real engagement.</p>
+  <!-- Services Section -->
+  <section class="services">
+    <h3>💼 Our Services</h3>
+    <div class="service-items">
+      <div class="service">
+        <h4>📈 Channel Monetization</h4>
+        <p>We help you achieve YouTube monetization quickly and safely with real strategies that work.</p>
       </div>
-      <div class="card">
-        <h4>Monetization</h4>
-        <p>Get your channel monetized quickly with our expert guidance and support.</p>
+      <div class="service">
+        <h4>👥 Audience Growth</h4>
+        <p>Get real, organic subscribers and views that actually engage with your content.</p>
       </div>
-      <div class="card">
-        <h4>Analytics & Growth</h4>
-        <p>We analyze your channel and provide insights to boost your views and subscribers.</p>
+      <div class="service">
+        <h4>🎨 Branding & Setup</h4>
+        <p>From thumbnails to SEO — we set up your channel for maximum visibility and results.</p>
       </div>
     </div>
+  </section>
+
+  <!-- Proof Section -->
+  <section class="proof">
+    <h3>✅ Proof of Work</h3>
+    <div class="proof-gallery">
+      <img src="proof1.png" alt="Proof 1">
+      <img src="proof2.png" alt="Proof 2">
+      <img src="proof3.png" alt="Proof 3">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h3>ℹ️ About IconBoost</h3>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          At <b>IconBoost</b>, we are more than just YouTube channel promoters — 
+          we are <b>growth partners</b>. With <b>years of experience</b> in digital marketing and channel optimization, 
+          we’ve helped countless creators cross YouTube’s monetization threshold and scale their content into sustainable income.
+        </p>
+        <p>
+          IconBoost is proudly part of the <b>TJ Digital Agency</b>, a recognized digital agency that specializes 
+          in audience growth, brand visibility, and online business scaling. This partnership ensures that 
+          our clients benefit from not only our expertise in YouTube growth, but also the wider resources and 
+          strategies of an established digital agency.
+        </p>
+        <p>
+          Whether you’re just starting your channel or aiming to maximize revenue, our mission is simple: 
+          to <b>turn your YouTube dreams into results</b>.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="logo.png" alt="IconBoost Logo">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h3>📩 Get in Touch</h3>
+    <p>Email: <a href="mailto:iconboostt@gmail.com">iconboostt@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/iconboostt" target="_blank">@iconboostt</a></p>
+    <p>Let’s grow your channel together 🚀</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 IconBoost. All Rights Reserved.</p>
-    <p>📧 iconboostt@gmail.com | 📱 IG: @iconboostt</p>
+    <p>© 2025 IconBoost | Powered by TJ Digital Agency</p>
   </footer>
+
 </body>
 </html>
